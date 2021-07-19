@@ -1,0 +1,356 @@
+/* Start Variables */
+:root {
+	--main-color: #0C0F38;
+    --secondary-color: #FDD430;
+}
+/* End Variables */
+/* Start Global Roles */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Word Sans", sans-serif;
+}
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* small */
+@media (min-width: 768px) {     
+	.container {
+		width: 750px;
+	}
+}
+
+/*Medium */
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+/* Large */
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+/* End Global Roles */
+/* Start Header */
+.header {
+    background-color: var(--main-color);
+}
+.header .container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px 40px 0;
+
+}
+.header .container nav i {
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+    display: none;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+@media (max-width: 767px) {
+    .header .container nav i {
+        display: block;
+    }
+}
+.header .container nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 767px) {
+    .header .container nav ul {
+        display: none;
+    }
+}
+.header .container nav ul li {
+    margin-left: 40px;
+}
+.header .container nav ul li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.header .container nav ul li .active {
+    color: var(--secondary-color);
+}
+.header .container .landing {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+@media (max-width: 767px) {
+    .header .container .landing {
+        flex-direction: column;
+    }
+}
+.header .container .landing .left {
+    flex-basis: 45%;
+}
+.header .container .landing .left h1 {
+    margin-top: 0;
+    font-size: 50px;
+    color: white;
+}
+.header .container .landing .left h3 {
+    font-size: 35px;
+    color: var(--secondary-color);
+}
+.header .container .landing .left p {
+    line-height: 2;
+    color: white;
+}
+.header .container .landing .left button {
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border: none;
+    background-color: white;
+    margin: 20px 0;
+    transition: 0.5s;
+}
+.header .container .landing .left button:hover {
+    color: white;
+    background-color: black;
+}
+.header .container .landing .right img {
+    width: 100%;
+}
+/* End Header */
+/* Start New */
+.new {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.new .container h2 {
+    color: var(--main-color);
+    font-size: 50px;
+}
+.new .container img {
+    max-width: 100%;
+}
+.new .container p {
+    color: var(--main-color);
+    line-height: 2;
+    font-size: 17px;
+}
+.new .container button {
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+.new .container button:hover {
+    background-color: var(--main-color);
+}
+/* End New */
+/* Start Services */
+.services {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: var(--main-color);
+}
+.services .container h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 0;
+}
+.services .container p {
+    color: white;
+    line-height: 2;
+}
+.services .container .services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    text-align: center;
+}
+.services .container .services-container .serv {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 25px 30px;
+    margin: 15px;
+    transition: 0.5s;
+}
+.services .container .services-container .serv:hover {
+    background-color: #8308EB;
+}
+.services .container .services-container .serv img {
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+.services .container .services-container .serv h5 {
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: white;
+}
+.services .container .services-container .serv p {
+    line-height: 1.7;
+    font-size: 17px;
+}
+.services .container button {
+    padding: 15px 40px;
+    border: none;
+    background-color: white;
+    margin: 20px 0;
+    transition: 0.5s;
+}
+.services .container button:hover {
+    color: white;
+    background-color: #8308EB;
+}
+/* End Services */
+/* Start Features */
+.features {
+    margin-top: 80px;
+    margin-bottom: 300px;
+    text-align: center;
+}
+.features .container h1 {
+    color: var(--main-color);
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.features .container p {
+    font-size: 17px;
+    line-height: 2;
+    color: var(--main-color);
+}
+.features .container .feat-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.features .container .feat-container .feat-form {
+    margin: 20px;
+}
+.features .container .feat-container .feat-form button {
+    padding: 15px 50px;
+    color: white;
+    background-color: black;
+    border: none;
+    margin: 20px;
+}
+.features .container .feat-container .feat-form .feat {
+    box-shadow: 0px 0px 6px -2px #777;
+    padding: 30px 20px 10px;
+    border-radius: 20px;
+}
+.features .container .feat-container .feat-form .feat p {
+    line-height: 1.7;
+    color: #090808;
+}
+.features .container .feat-container .feat button {
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+.features .container .feat-container .feat button:hover {
+    background-color: #8308EB;
+}
+/* End Features */
+/* Start Contact-us */
+.contact-us {
+    background-color: var(--main-color);
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.contact-us .container form {
+    position: absolute;
+    background-color: var(--main-color);
+    top: -180px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 50px;
+    width: 500px;
+    border-radius: 25px;
+}
+@media (max-width: 767px) {
+    .contact-us .container form {
+        width: 450px;
+    }
+}
+.contact-us .container form .main-input {
+    display: block;
+    border: #fff solid 1px;
+    padding: 0px 19px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    width: 100%;
+    height: 52px;
+    background: #fff;
+    color: #999999;
+    font-size: 16px;
+}
+.contact-us .container form .main-input:focus {
+    outline: none;
+}
+.contact-us .container form .main-input::placeholder {
+    color: #777;
+}
+.contact-us .container form button {
+    color: #EF4259;
+    background-color: white;
+    border: none;
+    padding: 15px 80px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+.contact-us .container .text {
+    padding-top: 250px;
+}
+@media (max-width: 767px) {
+    .contact-us .container form {
+        top: -80px;
+    }
+    .contact-us .container .text {
+        padding-top: 350px;
+    }
+}
+.contact-us .container .text h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.contact-us .container .text h5 {
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contact-us .container .text p {
+    color: white;
+    line-height: 1.7;
+    width: 600px;
+    margin: auto auto;
+    max-width: 100%;
+    font-size: 17px;
+}
+/* End Contact-us */
+/* Start Footer */
+footer .container p {
+    color: #777;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center; 
+}
+/* End Footer */
