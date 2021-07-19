@@ -286,6 +286,7 @@ body {
     padding: 50px;
     width: 500px;
     border-radius: 25px;
+    max-width: 100%;
 }
 @media (max-width: 767px) {
     .contact-us .container form {
