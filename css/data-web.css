@@ -250,6 +250,10 @@ body {
     box-shadow: 0px 0px 6px -2px #777;
     padding: 30px 20px 10px;
     border-radius: 20px;
+    transition: 0.5s;
+}
+.features .container .feat-container .feat-form .feat:hover {
+    transform: scale(120%);
 }
 .features .container .feat-container .feat-form .feat p {
     line-height: 1.7;
