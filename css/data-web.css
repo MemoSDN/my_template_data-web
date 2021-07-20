@@ -253,11 +253,15 @@ body {
     transition: 0.5s;
 }
 .features .container .feat-container .feat-form .feat:hover {
-    transform: scale(120%);
+    transform: scale(1.1,1.1);
 }
 .features .container .feat-container .feat-form .feat p {
     line-height: 1.7;
     color: #090808;
+}
+.features .container .feat-container .feat-form .feat h5 {
+    font-size: 25px;
+    margin: 5px;
 }
 .features .container .feat-container .feat button {
     padding: 15px 30px;
